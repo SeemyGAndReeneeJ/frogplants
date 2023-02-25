@@ -55,6 +55,15 @@
     "https://deno.land/std@0.152.0/async/pool.ts": "ef9eb97b388543acbf0ac32647121e4dbe629236899586c4d4311a8770fbb239",
     "https://deno.land/std@0.152.0/async/tee.ts": "bcfae0017ebb718cf4eef9e2420e8675d91cb1bcc0ed9b668681af6e6caad846",
     "https://deno.land/std@0.152.0/http/server.ts": "0b0a9f3abfcfecead944b31ee9098a0c11a59b0495bf873ee200eb80e7441483",
+    "https://deno.land/std@0.68.0/node/querystring.ts": "34bf86536c6e67aee99e855414e12342e55488fc586127b9a666acebf7f703b7",
+    "https://deno.land/x/airtable@v1.1.1/airtable.ts": "ffe788db2218d5f0f4972650cd4241075c0e2dcfd3e0f8d52438307365caae7b",
+    "https://deno.land/x/airtable@v1.1.1/constants.ts": "3914c1394ea9dab06462fe6037c1cf5a16a56fa4b4bef88597f792f49d30cb2a",
+    "https://deno.land/x/airtable@v1.1.1/deps.ts": "bcbcdfa58da073917649601e32b71162bbe6b175cf9a384682ba56bc947d0703",
+    "https://deno.land/x/airtable@v1.1.1/error.ts": "853cab09de96266cd715ad957fa3f2d508e357c4836ee204c6786ea60862c1c3",
+    "https://deno.land/x/airtable@v1.1.1/field-types.ts": "417b2d3224b8363e46068a3d0409a670814c59a0e439e709ad16cf9aa1b0da7a",
+    "https://deno.land/x/airtable@v1.1.1/mod.ts": "93222fe1ee1abce6367f37e6a1ea92f048bc19821cba1d343eb0c62547d8dcc2",
+    "https://deno.land/x/airtable@v1.1.1/types.ts": "437c6fa554125399335ca59fb3dc67a637d7d77a91d102de9d2d916b8e45b021",
+    "https://deno.land/x/airtable@v1.1.1/utils.ts": "2c724bfc46c9e5313f6735597e3b2b9b41e805e19105b9f61685a83f30c6eb36",
     "https://deno.land/x/code_block_writer@11.0.3/mod.ts": "2c3448060e47c9d08604c8f40dee34343f553f33edcdfebbf648442be33205e5",
     "https://deno.land/x/code_block_writer@11.0.3/utils/string_utils.ts": "60cb4ec8bd335bf241ef785ccec51e809d576ff8e8d29da43d2273b69ce2a6ff",
     "https://deno.land/x/denoflate@1.2.1/mod.ts": "f5628e44b80b3d80ed525afa2ba0f12408e3849db817d47a883b801f9ce69dd6",
@@ -123,5 +132,65 @@
     "https://esm.sh/v107/twind@0.16.17/deno/twind.js": "e42bab2b3622f13f826150079ddc44d68af6aa17052a03497cebea80aea930ad",
     "https://esm.sh/v107/twind@0.16.17/sheets/sheets.d.ts": "8c5392e418e291ad37417a757520ef4945c857460eda15cb57be4aedbb0024f2",
     "https://esm.sh/v107/twind@0.16.17/twind.d.ts": "54763379010e8184469f76a76bf936221097fb930a49534ae00e2c41a948a70a"
+  },
+  "npm": {
+    "specifiers": {
+      "airtable@0.11.6": "airtable@0.11.6"
+    },
+    "packages": {
+      "@types/node@14.18.36": {
+        "integrity": "sha512-FXKWbsJ6a1hIrRxv+FoukuHnGTgEzKYGi7kilfMae96AL9UNkPFNWJEEYWzdRI9ooIkbr4AKldyuSTLql06vLQ==",
+        "dependencies": {}
+      },
+      "abort-controller@3.0.0": {
+        "integrity": "sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==",
+        "dependencies": {
+          "event-target-shim": "event-target-shim@5.0.1"
+        }
+      },
+      "abortcontroller-polyfill@1.7.5": {
+        "integrity": "sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==",
+        "dependencies": {}
+      },
+      "airtable@0.11.6": {
+        "integrity": "sha512-Na67L2TO1DflIJ1yOGhQG5ilMfL2beHpsR+NW/jhaYOa4QcoxZOtDFs08cpSd1tBMsLpz5/rrz/VMX/pGL/now==",
+        "dependencies": {
+          "@types/node": "@types/node@14.18.36",
+          "abort-controller": "abort-controller@3.0.0",
+          "abortcontroller-polyfill": "abortcontroller-polyfill@1.7.5",
+          "lodash": "lodash@4.17.21",
+          "node-fetch": "node-fetch@2.6.9"
+        }
+      },
+      "event-target-shim@5.0.1": {
+        "integrity": "sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==",
+        "dependencies": {}
+      },
+      "lodash@4.17.21": {
+        "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
+        "dependencies": {}
+      },
+      "node-fetch@2.6.9": {
+        "integrity": "sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==",
+        "dependencies": {
+          "whatwg-url": "whatwg-url@5.0.0"
+        }
+      },
+      "tr46@0.0.3": {
+        "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==",
+        "dependencies": {}
+      },
+      "webidl-conversions@3.0.1": {
+        "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==",
+        "dependencies": {}
+      },
+      "whatwg-url@5.0.0": {
+        "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
+        "dependencies": {
+          "tr46": "tr46@0.0.3",
+          "webidl-conversions": "webidl-conversions@3.0.1"
+        }
+      }
+    }
   }
 }
