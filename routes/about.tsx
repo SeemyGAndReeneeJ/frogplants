@@ -6,5 +6,5 @@ export default function AboutPage() {
       <p>It's a great time.</p>
       <p>Thanks for stopping by!</p>
     </main>
-  )
+  );
 }

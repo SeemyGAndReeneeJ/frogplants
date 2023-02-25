@@ -1,8 +1,8 @@
 const URL = "https://api.airtable.com/v0/appq90yoZBiHLHokL/seeds";
 
-type Seed = {
+export type Seed = {
   ["Name"]: string;
-  ["Start Date"]: string;
+  ["Start date"]: string;
   sow: "direct" | "start";
   ["seed type"]: "vegetable" | "flower";
 };
