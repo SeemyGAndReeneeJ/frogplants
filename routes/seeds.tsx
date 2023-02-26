@@ -9,6 +9,7 @@ export const handler: Handlers<Seed[]> = {
 };
 
 export default function Seeds({ data: seeds }: PageProps<Seed[]>) {
+  const tdClass = "px-6 py-4 text-sm text-gray-500";
   const createTableRow = (seed: Seed) => {
     const name = seed.Name;
     const startDate = seed["Start date"];
@@ -16,26 +17,34 @@ export default function Seeds({ data: seeds }: PageProps<Seed[]>) {
     const seedType = seed["seed type"];
     return (
       <tr key={name}>
-        <td>{name}</td>
-        <td>{startDate}</td>
-        <td>{sow}</td>
-        <td>{seedType}</td>
+        <td class={tdClass}>{name}</td>
+        <td class={tdClass}>{startDate}</td>
+        <td class={tdClass}>{sow}</td>
+        <td class={tdClass}>{seedType}</td>
       </tr>
     );
   };
   const tableRows = seeds.map(createTableRow);
+  const thClass = "px-6 py-2 text-xs text-gray-500";
   return (
-    <div>
-      <h1>Seeds</h1>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Start Date</th>
-          <th>Sow</th>
-          <th>Seed Type</th>
-        </tr>
-        {tableRows}
-      </table>
+    <div class="container flex justify-center mx-auto">
+      <div class="flex flex-col">
+        <div class="w-full">
+          <div class="border-b border-gray-200 shadow">
+            <table>
+              <thead class="bg-green-100">
+                <tr>
+                  <th class={thClass}>Name</th>
+                  <th class={thClass}>Start Date</th>
+                  <th class={thClass}>Sow</th>
+                  <th class={thClass}>Seed Type</th>
+                </tr>
+              </thead>
+              <tbody class="bg-green-50">{tableRows}</tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
